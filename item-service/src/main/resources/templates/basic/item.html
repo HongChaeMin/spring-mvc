@@ -47,5 +47,10 @@
     </div>
   </div>
 </div> <!-- /container -->
+<script th:inline="javascript">
+  document.addEventListener("DOMContentLoaded", function(){
+    if ('[[ ${param.status} ]]') alert("저장되었습니다.");
+  });
+</script>
 </body>
 </html>
